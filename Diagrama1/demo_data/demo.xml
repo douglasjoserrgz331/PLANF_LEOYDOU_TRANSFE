@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Agrega aquí los registros de tu modelo -->
+
+<record model="NOTAS_ESTUDIANTE" id="nota_estudiante_1">
+    <field name="id_nts_est">1</field>
+    <field name="id_estudiante">1</field>
+</record>
+
+<record model="DOCENTE_UC" id="docente_uc_1">
+    <field name="id_docente_uc">1</field>
+    <field name="id_proyecto_dc">1</field>
+</record>
+
+<record model="ESTUDIANTE" id="estudiante_1">
+    <field name="id_estudiante">1</field>
+    <field name="id_docente_uc">1</field>
+</record>
+
+<record model="CARGA_NOTA" id="carga_nota_1">
+    <field name="id_carg_nt">1</field>
+    <field name="id_nts_est">1</field>
+</record>
+
+<record model="UC" id="uc_1">
+    <field name="id_unidad_curricular">1</field>
+    <field name="id_docente_uc">1</field>
+</record>
+
+<record model="SEMESTRE" id="semestre_1">
+    <field name="id_semestre">1</field>
+</record>
+
+<record model="PROYECTO_DOCENTE" id="proyecto_docente_1">
+    <field name="id_proyecto_dc">1</field>
+    <field name="id_docente">1</field>
+</record>
+
+<record model="PNF" id="pnf_1">
+    <field name="id_pnf">1</field>
+    <field name="id_estudiante">1</field>
+</record>
+
+
+<record model="TRAYECTO_SEMESTRE" id="trayecto_semestre_1">
+    <field name="id_try_sem">1</field>
+    <field name="id_semestre">1</field>
+</record>
+
+
+<record model="TURNO" id="turno_1">
+    <field name="id_turno">1</field>
+    <field name="id_aula">1</field>
+</record>
+
+<record model="HORARIO_NUCLEO" id="horario_nucleo_1">
+    <field name="id_hr_nclo">1</field>
+    <field name="id_nucleo">1</field>
+</record>
+
+<record model="NUCLEO" id="nucleo_1">
+    <field name="id_nucleo">1</field>
+    <field name="id_turno">1</field>
+</record>
+
+<record model="AULA" id="aula_1">
+    <field name="id_aula">1</field>
+</record>
+
+<record model="ESTADISTICA" id="estadistica_1">
+    <field name="id_estadistica">1</field>
+    <field name="id_try_sem">1</field>
+    <field name="id_pnf">1</field>
+    <field name="id_unidad_curricular">1</field>
+    <field name="id_hr_nclo">1</field>
+</record>
+
+<record model="DOCENTE" id="docente_1">
+    <field name="id_docente">1</field>
+</record>
+
+</data>
+
+</odoo>

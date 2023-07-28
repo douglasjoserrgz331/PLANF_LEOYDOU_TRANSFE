@@ -1,0 +1,16 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_NOTAS_ESTUDIANTE","NOTAS_ESTUDIANTE","model_NOTAS_ESTUDIANTE","base.group_user",1,0,0,0
+"access_DOCENTE_UC","DOCENTE_UC","model_DOCENTE_UC","base.group_user",1,0,0,0
+"access_ESTUDIANTE","ESTUDIANTE","model_ESTUDIANTE","base.group_user",1,0,0,0
+"access_CARGA_NOTA","CARGA_NOTA","model_CARGA_NOTA","base.group_user",1,0,0,0
+"access_UC","UC","model_UC","base.group_user",1,0,0,0
+"access_SEMESTRE","SEMESTRE","model_SEMESTRE","base.group_user",1,0,0,0
+"access_PROYECTO_DOCENTE","PROYECTO_DOCENTE","model_PROYECTO_DOCENTE","base.group_user",1,0,0,0
+"access_PNF","PNF","model_PNF","base.group_user",1,0,0,0
+"access_TRAYECTO_SEMESTRE","TRAYECTO_SEMESTRE","model_TRAYECTO_SEMESTRE","base.group_user",1,0,0,0
+"access_TURNO","TURNO","model_TURNO","base.group_user",1,0,0,0
+"access_HORARIO_NUCLEO","HORARIO_NUCLEO","model_HORARIO_NUCLEO","base.group_user",1,0,0,0
+"access_NUCLEO","NUCLEO","model_NUCLEO","base.group_user",1,0,0,0
+"access_AULA","AULA","model_AULA","base.group_user",1,0,0,0
+"access_ESTADISTICA","ESTADISTICA","model_ESTADISTICA","base.group_user",1,0,0,0
+"access_DOCENTE","DOCENTE","model_DOCENTE","base.group_user",1,0,0,0

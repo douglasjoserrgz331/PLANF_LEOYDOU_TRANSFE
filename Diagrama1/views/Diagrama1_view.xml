@@ -1,0 +1,1331 @@
+<?xml version="1.0"?>
+<odoo>
+<data>
+
+    <!-- VISTA FORM: notas_estudiante -->
+    <record model="ir.ui.view" id="view_NOTAS_ESTUDIANTE_form">
+        <field name="name">NOTAS_ESTUDIANTE.form</field>
+        <field name="model">NOTAS_ESTUDIANTE</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="NOTAS_ESTUDIANTE">
+            <group col="4" colspan="2">
+                <field name="id_nts_est" select="1"/>
+                <field name="id_estudiante" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: notas_estudiante -->
+    
+    <!-- VISTA TREE: notas_estudiante -->
+    <record model="ir.ui.view" id="view_NOTAS_ESTUDIANTE_tree">
+        <field name="name">NOTAS_ESTUDIANTE.tree</field>
+        <field name="model">NOTAS_ESTUDIANTE</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="NOTAS_ESTUDIANTE">
+                <field name="id_nts_est"/>
+                <field name="id_estudiante"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: notas_estudiante -->
+    
+    <!-- MODELO: notas_estudiante -->
+    <record model="ir.actions.act_window" id="action_NOTAS_ESTUDIANTE">
+        <field name="name">notas_estudiante</field>
+        <field name="res_model">NOTAS_ESTUDIANTE</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: notas_estudiante -->
+    
+    <!-- MENÚ SECUNDARIO: notas_estudiante -->
+    <menuitem name="notas_estudiante" id="menu_NOTAS_ESTUDIANTE" action="action_NOTAS_ESTUDIANTE" parent="men_sec"/>
+        
+    <!-- VISTA FORM: docente_uc -->
+    <record model="ir.ui.view" id="view_DOCENTE_UC_form">
+        <field name="name">DOCENTE_UC.form</field>
+        <field name="model">DOCENTE_UC</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="DOCENTE_UC">
+            <group col="4" colspan="2">
+                <field name="id_docente_uc" select="1"/>
+                <field name="id_proyecto_dc" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: docente_uc -->
+    
+    <!-- VISTA TREE: docente_uc -->
+    <record model="ir.ui.view" id="view_DOCENTE_UC_tree">
+        <field name="name">DOCENTE_UC.tree</field>
+        <field name="model">DOCENTE_UC</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="DOCENTE_UC">
+                <field name="id_docente_uc"/>
+                <field name="id_proyecto_dc"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: docente_uc -->
+    
+    <!-- MODELO: docente_uc -->
+    <record model="ir.actions.act_window" id="action_DOCENTE_UC">
+        <field name="name">docente_uc</field>
+        <field name="res_model">DOCENTE_UC</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: docente_uc -->
+    
+    <!-- MENÚ SECUNDARIO: docente_uc -->
+    <menuitem name="docente_uc" id="menu_DOCENTE_UC" action="action_DOCENTE_UC" parent="men_sec"/>
+        
+    <!-- VISTA FORM: estudiante -->
+    <record model="ir.ui.view" id="view_ESTUDIANTE_form">
+        <field name="name">ESTUDIANTE.form</field>
+        <field name="model">ESTUDIANTE</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="ESTUDIANTE">
+            <group col="4" colspan="2">
+                <field name="id_estudiante" select="1"/>
+                <field name="id_docente_uc" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: estudiante -->
+    
+    <!-- VISTA TREE: estudiante -->
+    <record model="ir.ui.view" id="view_ESTUDIANTE_tree">
+        <field name="name">ESTUDIANTE.tree</field>
+        <field name="model">ESTUDIANTE</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="ESTUDIANTE">
+                <field name="id_estudiante"/>
+                <field name="id_docente_uc"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: estudiante -->
+    
+    <!-- MODELO: estudiante -->
+    <record model="ir.actions.act_window" id="action_ESTUDIANTE">
+        <field name="name">estudiante</field>
+        <field name="res_model">ESTUDIANTE</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: estudiante -->
+    
+    <!-- MENÚ SECUNDARIO: estudiante -->
+    <menuitem name="estudiante" id="menu_ESTUDIANTE" action="action_ESTUDIANTE" parent="men_sec"/>
+        
+    <!-- VISTA FORM: carga_nota -->
+    <record model="ir.ui.view" id="view_CAR_NOTA_form">
+        <field name="name">CAR_NOTA.form</field>
+        <field name="model">CAR_NOTA</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="CAR_NOTA">
+            <group col="4" colspan="2">
+                <field name="id_carg_nt" select="1"/>
+                <field name="id_nts_est" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: carga_nota -->
+    
+    <!-- VISTA TREE: carga_nota -->
+    <record model="ir.ui.view" id="view_CAR_NOTA_tree">
+        <field name="name">CAR_NOTA.tree</field>
+        <field name="model">CAR_NOTA</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="CAR_NOTA">
+                <field name="id_carg_nt"/>
+                <field name="id_nts_est"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: carga_nota -->
+    
+    <!-- MODELO: carga_nota -->
+    <record model="ir.actions.act_window" id="action_CAR_NOTA">
+        <field name="name">carga_nota</field>
+        <field name="res_model">CAR_NOTA</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: carga_nota -->
+    
+    <!-- MENÚ SECUNDARIO: carga_nota -->
+    <menuitem name="carga_nota" id="menu_CAR_NOTA" action="action_CAR_NOTA" parent="men_sec"/>
+        
+    <!-- VISTA FORM: uc -->
+    <record model="ir.ui.view" id="view_UC_form">
+        <field name="name">UC.form</field>
+        <field name="model">UC</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="UC">
+            <group col="4" colspan="2">
+                <field name="id_unidad_curricular" select="1"/>
+                <field name="id_docente_uc" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: uc -->
+    
+    <!-- VISTA TREE: uc -->
+    <record model="ir.ui.view" id="view_UC_tree">
+        <field name="name">UC.tree</field>
+        <field name="model">UC</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="UC">
+                <field name="id_unidad_curricular"/>
+                <field name="id_docente_uc"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: uc -->
+    
+    <!-- MODELO: uc -->
+    <record model="ir.actions.act_window" id="action_UC">
+        <field name="name">uc</field>
+        <field name="res_model">UC</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: uc -->
+    
+    <!-- MENÚ SECUNDARIO: uc -->
+    <menuitem name="uc" id="menu_UC" action="action_UC" parent="men_sec"/>
+        
+    <!-- VISTA FORM: semestre -->
+    <record model="ir.ui.view" id="view_SEMESTRE_form">
+        <field name="name">SEMESTRE.form</field>
+        <field name="model">SEMESTRE</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="SEMESTRE">
+            <group col="4" colspan="2">
+                <field name="id_semestre" select="1"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: semestre -->
+    
+    <!-- VISTA TREE: semestre -->
+    <record model="ir.ui.view" id="view_SEMESTRE_tree">
+        <field name="name">SEMESTRE.tree</field>
+        <field name="model">SEMESTRE</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="SEMESTRE">
+                <field name="id_semestre"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: semestre -->
+    
+    <!-- MODELO: semestre -->
+    <record model="ir.actions.act_window" id="action_SEMESTRE">
+        <field name="name">semestre</field>
+        <field name="res_model">SEMESTRE</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: semestre -->
+    
+    <!-- MENÚ SECUNDARIO: semestre -->
+    <menuitem name="semestre" id="menu_SEMESTRE" action="action_SEMESTRE" parent="men_sec"/>
+        
+    <!-- VISTA FORM: proyecto_docente -->
+    <record model="ir.ui.view" id="view_PROYECTO_DOCENTE_form">
+        <field name="name">PROYECTO_DOCENTE.form</field>
+        <field name="model">PROYECTO_DOCENTE</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="PROYECTO_DOCENTE">
+            <group col="4" colspan="2">
+                <field name="id_proyecto_dc" select="1"/>
+                <field name="id_docente" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: proyecto_docente -->
+    
+    <!-- VISTA TREE: proyecto_docente -->
+    <record model="ir.ui.view" id="view_PROYECTO_DOCENTE_tree">
+        <field name="name">PROYECTO_DOCENTE.tree</field>
+        <field name="model">PROYECTO_DOCENTE</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="PROYECTO_DOCENTE">
+                <field name="id_proyecto_dc"/>
+                <field name="id_docente"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: proyecto_docente -->
+    
+    <!-- MODELO: proyecto_docente -->
+    <record model="ir.actions.act_window" id="action_PROYECTO_DOCENTE">
+        <field name="name">proyecto_docente</field>
+        <field name="res_model">PROYECTO_DOCENTE</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: proyecto_docente -->
+    
+    <!-- MENÚ SECUNDARIO: proyecto_docente -->
+    <menuitem name="proyecto_docente" id="menu_PROYECTO_DOCENTE" action="action_PROYECTO_DOCENTE" parent="men_sec"/>
+        
+    <!-- VISTA FORM: pnf -->
+    <record model="ir.ui.view" id="view_PNF_form">
+        <field name="name">PNF.form</field>
+        <field name="model">PNF</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="PNF">
+            <group col="4" colspan="2">
+                <field name="id_pnf" select="1"/>
+                <field name="id_estudiante" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: pnf -->
+    
+    <!-- VISTA TREE: pnf -->
+    <record model="ir.ui.view" id="view_PNF_tree">
+        <field name="name">PNF.tree</field>
+        <field name="model">PNF</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="PNF">
+                <field name="id_pnf"/>
+                <field name="id_estudiante"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: pnf -->
+    
+    <!-- MODELO: pnf -->
+    <record model="ir.actions.act_window" id="action_PNF">
+        <field name="name">pnf</field>
+        <field name="res_model">PNF</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: pnf -->
+    
+    <!-- MENÚ SECUNDARIO: pnf -->
+    <menuitem name="pnf" id="menu_PNF" action="action_PNF" parent="men_sec"/>
+        
+    <!-- VISTA FORM: trayecto_semestre -->
+    <record model="ir.ui.view" id="view_TRAYECTO_SEMESTRE_form">
+        <field name="name">TRAYECTO_SEMESTRE.form</field>
+        <field name="model">TRAYECTO_SEMESTRE</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="TRAYECTO_SEMESTRE">
+            <group col="4" colspan="2">
+                <field name="id_try_sem" select="1"/>
+                <field name="id_semestre" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: trayecto_semestre -->
+    
+    <!-- VISTA TREE: trayecto_semestre -->
+    <record model="ir.ui.view" id="view_TRAYECTO_SEMESTRE_tree">
+        <field name="name">TRAYECTO_SEMESTRE.tree</field>
+        <field name="model">TRAYECTO_SEMESTRE</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="TRAYECTO_SEMESTRE">
+                <field name="id_try_sem"/>
+                <field name="id_semestre"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: trayecto_semestre -->
+    
+    <!-- MODELO: trayecto_semestre -->
+    <record model="ir.actions.act_window" id="action_TRAYECTO_SEMESTRE">
+        <field name="name">trayecto_semestre</field>
+        <field name="res_model">TRAYECTO_SEMESTRE</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: trayecto_semestre -->
+    
+    <!-- MENÚ SECUNDARIO: trayecto_semestre -->
+    <menuitem name="trayecto_semestre" id="menu_TRAYECTO_SEMESTRE" action="action_TRAYECTO_SEMESTRE" parent="men_sec"/>
+        
+    <!-- VISTA FORM: turno -->
+    <record model="ir.ui.view" id="view_TURNO_form">
+        <field name="name">TURNO.form</field>
+        <field name="model">TURNO</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="TURNO">
+            <group col="4" colspan="2">
+                <field name="id_turno" select="1"/>
+                <field name="id_aula" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: turno -->
+    
+    <!-- VISTA TREE: turno -->
+    <record model="ir.ui.view" id="view_TURNO_tree">
+        <field name="name">TURNO.tree</field>
+        <field name="model">TURNO</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="TURNO">
+                <field name="id_turno"/>
+                <field name="id_aula"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: turno -->
+    
+    <!-- MODELO: turno -->
+    <record model="ir.actions.act_window" id="action_TURNO">
+        <field name="name">turno</field>
+        <field name="res_model">TURNO</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: turno -->
+    
+    <!-- MENÚ SECUNDARIO: turno -->
+    <menuitem name="turno" id="menu_TURNO" action="action_TURNO" parent="men_sec"/>
+        
+    <!-- VISTA FORM: horario_nucleo -->
+    <record model="ir.ui.view" id="view_HORARIO_NUCLEO_form">
+        <field name="name">HORARIO_NUCLEO.form</field>
+        <field name="model">HORARIO_NUCLEO</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="HORARIO_NUCLEO">
+            <group col="4" colspan="2">
+                <field name="id_hr_nclo" select="1"/>
+                <field name="id_nucleo" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: horario_nucleo -->
+    
+    <!-- VISTA TREE: horario_nucleo -->
+    <record model="ir.ui.view" id="view_HORARIO_NUCLEO_tree">
+        <field name="name">HORARIO_NUCLEO.tree</field>
+        <field name="model">HORARIO_NUCLEO</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="HORARIO_NUCLEO">
+                <field name="id_hr_nclo"/>
+                <field name="id_nucleo"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: horario_nucleo -->
+    
+    <!-- MODELO: horario_nucleo -->
+    <record model="ir.actions.act_window" id="action_HORARIO_NUCLEO">
+        <field name="name">horario_nucleo</field>
+        <field name="res_model">HORARIO_NUCLEO</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: horario_nucleo -->
+    
+    <!-- MENÚ SECUNDARIO: horario_nucleo -->
+    <menuitem name="horario_nucleo" id="menu_HORARIO_NUCLEO" action="action_HORARIO_NUCLEO" parent="men_sec"/>
+        
+    <!-- VISTA FORM: nucleo -->
+    <record model="ir.ui.view" id="view_NUCLEO_form">
+        <field name="name">NUCLEO.form</field>
+        <field name="model">NUCLEO</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="NUCLEO">
+            <group col="4" colspan="2">
+                <field name="id_nucleo" select="1"/>
+                <field name="id_turno" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: nucleo -->
+    
+    <!-- VISTA TREE: nucleo -->
+    <record model="ir.ui.view" id="view_NUCLEO_tree">
+        <field name="name">NUCLEO.tree</field>
+        <field name="model">NUCLEO</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="NUCLEO">
+                <field name="id_nucleo"/>
+                <field name="id_turno"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: nucleo -->
+    
+    <!-- MODELO: nucleo -->
+    <record model="ir.actions.act_window" id="action_NUCLEO">
+        <field name="name">nucleo</field>
+        <field name="res_model">NUCLEO</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: nucleo -->
+    
+    <!-- MENÚ SECUNDARIO: nucleo -->
+    <menuitem name="nucleo" id="menu_NUCLEO" action="action_NUCLEO" parent="men_sec"/>
+        
+    <!-- VISTA FORM: aula -->
+    <record model="ir.ui.view" id="view_AULA_form">
+        <field name="name">AULA.form</field>
+        <field name="model">AULA</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="AULA">
+            <group col="4" colspan="2">
+                <field name="id_aula" select="1"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: aula -->
+    
+    <!-- VISTA TREE: aula -->
+    <record model="ir.ui.view" id="view_AULA_tree">
+        <field name="name">AULA.tree</field>
+        <field name="model">AULA</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="AULA">
+                <field name="id_aula"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: aula -->
+    
+    <!-- MODELO: aula -->
+    <record model="ir.actions.act_window" id="action_AULA">
+        <field name="name">aula</field>
+        <field name="res_model">AULA</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: aula -->
+    
+    <!-- MENÚ SECUNDARIO: aula -->
+    <menuitem name="aula" id="menu_AULA" action="action_AULA" parent="men_sec"/>
+        
+    <!-- VISTA FORM: estaditisca -->
+    <record model="ir.ui.view" id="view_ESTADISTICA_form">
+        <field name="name">ESTADISTICA.form</field>
+        <field name="model">ESTADISTICA</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="ESTADISTICA">
+            <group col="4" colspan="2">
+                <field name="id_estadistica" select="1"/>
+                <field name="id_try_sem" select="2"/>
+                <field name="id_pnf" select="0"/>
+                <field name="id_unidad_curricular" select="0"/>
+                <field name="id_hr_nclo" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: estaditisca -->
+    
+    <!-- VISTA TREE: estaditisca -->
+    <record model="ir.ui.view" id="view_ESTADISTICA_tree">
+        <field name="name">ESTADISTICA.tree</field>
+        <field name="model">ESTADISTICA</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="ESTADISTICA">
+                <field name="id_estadistica"/>
+                <field name="id_try_sem"/>
+                <field name="id_pnf"/>
+                <field name="id_unidad_curricular"/>
+                <field name="id_hr_nclo"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: estaditisca -->
+    
+    <!-- MODELO: estaditisca -->
+    <record model="ir.actions.act_window" id="action_ESTADISTICA">
+        <field name="name">estaditisca</field>
+        <field name="res_model">ESTADISTICA</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: estaditisca -->
+    
+    <!-- MENÚ SECUNDARIO: estaditisca -->
+    <menuitem name="estaditisca" id="menu_ESTADISTICA" action="action_ESTADISTICA" parent="men_sec"/>
+        
+    <!-- VISTA FORM: docente -->
+    <record model="ir.ui.view" id="view_DOCENTE_form">
+        <field name="name">DOCENTE.form</field>
+        <field name="model">DOCENTE</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="DOCENTE">
+            <group col="4" colspan="2">
+                <field name="id_docente" select="1"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: docente -->
+    
+    <!-- VISTA TREE: docente -->
+    <record model="ir.ui.view" id="view_DOCENTE_tree">
+        <field name="name">DOCENTE.tree</field>
+        <field name="model">DOCENTE</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="DOCENTE">
+                <field name="id_docente"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: docente -->
+    
+    <!-- MODELO: docente -->
+    <record model="ir.actions.act_window" id="action_DOCENTE">
+        <field name="name">docente</field>
+        <field name="res_model">DOCENTE</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: docente -->
+    
+    <!-- MENÚ SECUNDARIO: docente -->
+    <menuitem name="docente" id="menu_DOCENTE" action="action_DOCENTE" parent="men_sec"/>
+        
+    <!-- VISTA FORM: notas_estudiante -->
+    <record model="ir.ui.view" id="view_NOTAS_ESTUDIANTE_form">
+        <field name="name">NOTAS_ESTUDIANTE.form</field>
+        <field name="model">NOTAS_ESTUDIANTE</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="NOTAS_ESTUDIANTE">
+            <group col="4" colspan="2">
+                <field name="id_nts_est" select="1"/>
+                <field name="id_estudiante" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: notas_estudiante -->
+    
+    <!-- VISTA TREE: notas_estudiante -->
+    <record model="ir.ui.view" id="view_NOTAS_ESTUDIANTE_tree">
+        <field name="name">NOTAS_ESTUDIANTE.tree</field>
+        <field name="model">NOTAS_ESTUDIANTE</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="NOTAS_ESTUDIANTE">
+                <field name="id_nts_est"/>
+                <field name="id_estudiante"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: notas_estudiante -->
+    
+    <!-- MODELO: notas_estudiante -->
+    <record model="ir.actions.act_window" id="action_NOTAS_ESTUDIANTE">
+        <field name="name">notas_estudiante</field>
+        <field name="res_model">NOTAS_ESTUDIANTE</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: notas_estudiante -->
+    
+    <!-- MENÚ SECUNDARIO: notas_estudiante -->
+    <menuitem name="notas_estudiante" id="menu_NOTAS_ESTUDIANTE" action="action_NOTAS_ESTUDIANTE" parent="men_sec"/>
+        
+    <!-- VISTA FORM: docente_uc -->
+    <record model="ir.ui.view" id="view_DOCENTE_UC_form">
+        <field name="name">DOCENTE_UC.form</field>
+        <field name="model">DOCENTE_UC</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="DOCENTE_UC">
+            <group col="4" colspan="2">
+                <field name="id_docente_uc" select="1"/>
+                <field name="id_proyecto_dc" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: docente_uc -->
+    
+    <!-- VISTA TREE: docente_uc -->
+    <record model="ir.ui.view" id="view_DOCENTE_UC_tree">
+        <field name="name">DOCENTE_UC.tree</field>
+        <field name="model">DOCENTE_UC</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="DOCENTE_UC">
+                <field name="id_docente_uc"/>
+                <field name="id_proyecto_dc"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: docente_uc -->
+    
+    <!-- MODELO: docente_uc -->
+    <record model="ir.actions.act_window" id="action_DOCENTE_UC">
+        <field name="name">docente_uc</field>
+        <field name="res_model">DOCENTE_UC</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: docente_uc -->
+    
+    <!-- MENÚ SECUNDARIO: docente_uc -->
+    <menuitem name="docente_uc" id="menu_DOCENTE_UC" action="action_DOCENTE_UC" parent="men_sec"/>
+        
+    <!-- VISTA FORM: estudiante -->
+    <record model="ir.ui.view" id="view_ESTUDIANTE_form">
+        <field name="name">ESTUDIANTE.form</field>
+        <field name="model">ESTUDIANTE</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="ESTUDIANTE">
+            <group col="4" colspan="2">
+                <field name="id_estudiante" select="1"/>
+                <field name="id_docente_uc" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: estudiante -->
+    
+    <!-- VISTA TREE: estudiante -->
+    <record model="ir.ui.view" id="view_ESTUDIANTE_tree">
+        <field name="name">ESTUDIANTE.tree</field>
+        <field name="model">ESTUDIANTE</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="ESTUDIANTE">
+                <field name="id_estudiante"/>
+                <field name="id_docente_uc"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: estudiante -->
+    
+    <!-- MODELO: estudiante -->
+    <record model="ir.actions.act_window" id="action_ESTUDIANTE">
+        <field name="name">estudiante</field>
+        <field name="res_model">ESTUDIANTE</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: estudiante -->
+    
+    <!-- MENÚ SECUNDARIO: estudiante -->
+    <menuitem name="estudiante" id="menu_ESTUDIANTE" action="action_ESTUDIANTE" parent="men_sec"/>
+        
+    <!-- VISTA FORM: carga_nota -->
+    <record model="ir.ui.view" id="view_CAR_NOTA_form">
+        <field name="name">CAR_NOTA.form</field>
+        <field name="model">CAR_NOTA</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="CAR_NOTA">
+            <group col="4" colspan="2">
+                <field name="id_carg_nt" select="1"/>
+                <field name="id_nts_est" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: carga_nota -->
+    
+    <!-- VISTA TREE: carga_nota -->
+    <record model="ir.ui.view" id="view_CAR_NOTA_tree">
+        <field name="name">CAR_NOTA.tree</field>
+        <field name="model">CAR_NOTA</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="CAR_NOTA">
+                <field name="id_carg_nt"/>
+                <field name="id_nts_est"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: carga_nota -->
+    
+    <!-- MODELO: carga_nota -->
+    <record model="ir.actions.act_window" id="action_CAR_NOTA">
+        <field name="name">carga_nota</field>
+        <field name="res_model">CAR_NOTA</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: carga_nota -->
+    
+    <!-- MENÚ SECUNDARIO: carga_nota -->
+    <menuitem name="carga_nota" id="menu_CAR_NOTA" action="action_CAR_NOTA" parent="men_sec"/>
+        
+    <!-- VISTA FORM: uc -->
+    <record model="ir.ui.view" id="view_UC_form">
+        <field name="name">UC.form</field>
+        <field name="model">UC</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="UC">
+            <group col="4" colspan="2">
+                <field name="id_unidad_curricular" select="1"/>
+                <field name="id_docente_uc" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: uc -->
+    
+    <!-- VISTA TREE: uc -->
+    <record model="ir.ui.view" id="view_UC_tree">
+        <field name="name">UC.tree</field>
+        <field name="model">UC</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="UC">
+                <field name="id_unidad_curricular"/>
+                <field name="id_docente_uc"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: uc -->
+    
+    <!-- MODELO: uc -->
+    <record model="ir.actions.act_window" id="action_UC">
+        <field name="name">uc</field>
+        <field name="res_model">UC</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: uc -->
+    
+    <!-- MENÚ SECUNDARIO: uc -->
+    <menuitem name="uc" id="menu_UC" action="action_UC" parent="men_sec"/>
+        
+    <!-- VISTA FORM: semestre -->
+    <record model="ir.ui.view" id="view_SEMESTRE_form">
+        <field name="name">SEMESTRE.form</field>
+        <field name="model">SEMESTRE</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="SEMESTRE">
+            <group col="4" colspan="2">
+                <field name="id_semestre" select="1"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: semestre -->
+    
+    <!-- VISTA TREE: semestre -->
+    <record model="ir.ui.view" id="view_SEMESTRE_tree">
+        <field name="name">SEMESTRE.tree</field>
+        <field name="model">SEMESTRE</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="SEMESTRE">
+                <field name="id_semestre"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: semestre -->
+    
+    <!-- MODELO: semestre -->
+    <record model="ir.actions.act_window" id="action_SEMESTRE">
+        <field name="name">semestre</field>
+        <field name="res_model">SEMESTRE</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: semestre -->
+    
+    <!-- MENÚ SECUNDARIO: semestre -->
+    <menuitem name="semestre" id="menu_SEMESTRE" action="action_SEMESTRE" parent="men_sec"/>
+        
+    <!-- VISTA FORM: proyecto_docente -->
+    <record model="ir.ui.view" id="view_PROYECTO_DOCENTE_form">
+        <field name="name">PROYECTO_DOCENTE.form</field>
+        <field name="model">PROYECTO_DOCENTE</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="PROYECTO_DOCENTE">
+            <group col="4" colspan="2">
+                <field name="id_proyecto_dc" select="1"/>
+                <field name="id_docente" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: proyecto_docente -->
+    
+    <!-- VISTA TREE: proyecto_docente -->
+    <record model="ir.ui.view" id="view_PROYECTO_DOCENTE_tree">
+        <field name="name">PROYECTO_DOCENTE.tree</field>
+        <field name="model">PROYECTO_DOCENTE</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="PROYECTO_DOCENTE">
+                <field name="id_proyecto_dc"/>
+                <field name="id_docente"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: proyecto_docente -->
+    
+    <!-- MODELO: proyecto_docente -->
+    <record model="ir.actions.act_window" id="action_PROYECTO_DOCENTE">
+        <field name="name">proyecto_docente</field>
+        <field name="res_model">PROYECTO_DOCENTE</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: proyecto_docente -->
+    
+    <!-- MENÚ SECUNDARIO: proyecto_docente -->
+    <menuitem name="proyecto_docente" id="menu_PROYECTO_DOCENTE" action="action_PROYECTO_DOCENTE" parent="men_sec"/>
+        
+    <!-- VISTA FORM: pnf -->
+    <record model="ir.ui.view" id="view_PNF_form">
+        <field name="name">PNF.form</field>
+        <field name="model">PNF</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="PNF">
+            <group col="4" colspan="2">
+                <field name="id_pnf" select="1"/>
+                <field name="id_estudiante" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: pnf -->
+    
+    <!-- VISTA TREE: pnf -->
+    <record model="ir.ui.view" id="view_PNF_tree">
+        <field name="name">PNF.tree</field>
+        <field name="model">PNF</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="PNF">
+                <field name="id_pnf"/>
+                <field name="id_estudiante"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: pnf -->
+    
+    <!-- MODELO: pnf -->
+    <record model="ir.actions.act_window" id="action_PNF">
+        <field name="name">pnf</field>
+        <field name="res_model">PNF</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: pnf -->
+    
+    <!-- MENÚ SECUNDARIO: pnf -->
+    <menuitem name="pnf" id="menu_PNF" action="action_PNF" parent="men_sec"/>
+        
+    <!-- VISTA FORM: trayecto_semestre -->
+    <record model="ir.ui.view" id="view_TRAYECTO_SEMESTRE_form">
+        <field name="name">TRAYECTO_SEMESTRE.form</field>
+        <field name="model">TRAYECTO_SEMESTRE</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="TRAYECTO_SEMESTRE">
+            <group col="4" colspan="2">
+                <field name="id_try_sem" select="1"/>
+                <field name="id_semestre" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: trayecto_semestre -->
+    
+    <!-- VISTA TREE: trayecto_semestre -->
+    <record model="ir.ui.view" id="view_TRAYECTO_SEMESTRE_tree">
+        <field name="name">TRAYECTO_SEMESTRE.tree</field>
+        <field name="model">TRAYECTO_SEMESTRE</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="TRAYECTO_SEMESTRE">
+                <field name="id_try_sem"/>
+                <field name="id_semestre"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: trayecto_semestre -->
+    
+    <!-- MODELO: trayecto_semestre -->
+    <record model="ir.actions.act_window" id="action_TRAYECTO_SEMESTRE">
+        <field name="name">trayecto_semestre</field>
+        <field name="res_model">TRAYECTO_SEMESTRE</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: trayecto_semestre -->
+    
+    <!-- MENÚ SECUNDARIO: trayecto_semestre -->
+    <menuitem name="trayecto_semestre" id="menu_TRAYECTO_SEMESTRE" action="action_TRAYECTO_SEMESTRE" parent="men_sec"/>
+        
+    <!-- VISTA FORM: turno -->
+    <record model="ir.ui.view" id="view_TURNO_form">
+        <field name="name">TURNO.form</field>
+        <field name="model">TURNO</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="TURNO">
+            <group col="4" colspan="2">
+                <field name="id_turno" select="1"/>
+                <field name="id_aula" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: turno -->
+    
+    <!-- VISTA TREE: turno -->
+    <record model="ir.ui.view" id="view_TURNO_tree">
+        <field name="name">TURNO.tree</field>
+        <field name="model">TURNO</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="TURNO">
+                <field name="id_turno"/>
+                <field name="id_aula"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: turno -->
+    
+    <!-- MODELO: turno -->
+    <record model="ir.actions.act_window" id="action_TURNO">
+        <field name="name">turno</field>
+        <field name="res_model">TURNO</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: turno -->
+    
+    <!-- MENÚ SECUNDARIO: turno -->
+    <menuitem name="turno" id="menu_TURNO" action="action_TURNO" parent="men_sec"/>
+        
+    <!-- VISTA FORM: horario_nucleo -->
+    <record model="ir.ui.view" id="view_HORARIO_NUCLEO_form">
+        <field name="name">HORARIO_NUCLEO.form</field>
+        <field name="model">HORARIO_NUCLEO</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="HORARIO_NUCLEO">
+            <group col="4" colspan="2">
+                <field name="id_hr_nclo" select="1"/>
+                <field name="id_nucleo" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: horario_nucleo -->
+    
+    <!-- VISTA TREE: horario_nucleo -->
+    <record model="ir.ui.view" id="view_HORARIO_NUCLEO_tree">
+        <field name="name">HORARIO_NUCLEO.tree</field>
+        <field name="model">HORARIO_NUCLEO</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="HORARIO_NUCLEO">
+                <field name="id_hr_nclo"/>
+                <field name="id_nucleo"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: horario_nucleo -->
+    
+    <!-- MODELO: horario_nucleo -->
+    <record model="ir.actions.act_window" id="action_HORARIO_NUCLEO">
+        <field name="name">horario_nucleo</field>
+        <field name="res_model">HORARIO_NUCLEO</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: horario_nucleo -->
+    
+    <!-- MENÚ SECUNDARIO: horario_nucleo -->
+    <menuitem name="horario_nucleo" id="menu_HORARIO_NUCLEO" action="action_HORARIO_NUCLEO" parent="men_sec"/>
+        
+    <!-- VISTA FORM: nucleo -->
+    <record model="ir.ui.view" id="view_NUCLEO_form">
+        <field name="name">NUCLEO.form</field>
+        <field name="model">NUCLEO</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="NUCLEO">
+            <group col="4" colspan="2">
+                <field name="id_nucleo" select="1"/>
+                <field name="id_turno" select="2"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: nucleo -->
+    
+    <!-- VISTA TREE: nucleo -->
+    <record model="ir.ui.view" id="view_NUCLEO_tree">
+        <field name="name">NUCLEO.tree</field>
+        <field name="model">NUCLEO</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="NUCLEO">
+                <field name="id_nucleo"/>
+                <field name="id_turno"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: nucleo -->
+    
+    <!-- MODELO: nucleo -->
+    <record model="ir.actions.act_window" id="action_NUCLEO">
+        <field name="name">nucleo</field>
+        <field name="res_model">NUCLEO</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: nucleo -->
+    
+    <!-- MENÚ SECUNDARIO: nucleo -->
+    <menuitem name="nucleo" id="menu_NUCLEO" action="action_NUCLEO" parent="men_sec"/>
+        
+    <!-- VISTA FORM: aula -->
+    <record model="ir.ui.view" id="view_AULA_form">
+        <field name="name">AULA.form</field>
+        <field name="model">AULA</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="AULA">
+            <group col="4" colspan="2">
+                <field name="id_aula" select="1"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: aula -->
+    
+    <!-- VISTA TREE: aula -->
+    <record model="ir.ui.view" id="view_AULA_tree">
+        <field name="name">AULA.tree</field>
+        <field name="model">AULA</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="AULA">
+                <field name="id_aula"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: aula -->
+    
+    <!-- MODELO: aula -->
+    <record model="ir.actions.act_window" id="action_AULA">
+        <field name="name">aula</field>
+        <field name="res_model">AULA</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: aula -->
+    
+    <!-- MENÚ SECUNDARIO: aula -->
+    <menuitem name="aula" id="menu_AULA" action="action_AULA" parent="men_sec"/>
+        
+    <!-- VISTA FORM: estaditisca -->
+    <record model="ir.ui.view" id="view_ESTADISTICA_form">
+        <field name="name">ESTADISTICA.form</field>
+        <field name="model">ESTADISTICA</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="ESTADISTICA">
+            <group col="4" colspan="2">
+                <field name="id_estadistica" select="1"/>
+                <field name="id_try_sem" select="2"/>
+                <field name="id_pnf" select="0"/>
+                <field name="id_unidad_curricular" select="0"/>
+                <field name="id_hr_nclo" select="0"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: estaditisca -->
+    
+    <!-- VISTA TREE: estaditisca -->
+    <record model="ir.ui.view" id="view_ESTADISTICA_tree">
+        <field name="name">ESTADISTICA.tree</field>
+        <field name="model">ESTADISTICA</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="ESTADISTICA">
+                <field name="id_estadistica"/>
+                <field name="id_try_sem"/>
+                <field name="id_pnf"/>
+                <field name="id_unidad_curricular"/>
+                <field name="id_hr_nclo"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: estaditisca -->
+    
+    <!-- MODELO: estaditisca -->
+    <record model="ir.actions.act_window" id="action_ESTADISTICA">
+        <field name="name">estaditisca</field>
+        <field name="res_model">ESTADISTICA</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: estaditisca -->
+    
+    <!-- MENÚ SECUNDARIO: estaditisca -->
+    <menuitem name="estaditisca" id="menu_ESTADISTICA" action="action_ESTADISTICA" parent="men_sec"/>
+        
+    <!-- VISTA FORM: docente -->
+    <record model="ir.ui.view" id="view_DOCENTE_form">
+        <field name="name">DOCENTE.form</field>
+        <field name="model">DOCENTE</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="DOCENTE">
+            <group col="4" colspan="2">
+                <field name="id_docente" select="1"/>
+
+            </group>
+            </form>
+        </field>
+    </record>
+    <!-- FIN VISTA FORM: docente -->
+    
+    <!-- VISTA TREE: docente -->
+    <record model="ir.ui.view" id="view_DOCENTE_tree">
+        <field name="name">DOCENTE.tree</field>
+        <field name="model">DOCENTE</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="DOCENTE">
+                <field name="id_docente"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- FIN VISTA TREE: docente -->
+    
+    <!-- MODELO: docente -->
+    <record model="ir.actions.act_window" id="action_DOCENTE">
+        <field name="name">docente</field>
+        <field name="res_model">DOCENTE</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- FIN MODELO: docente -->
+    
+    <!-- MENÚ SECUNDARIO: docente -->
+    <menuitem name="docente" id="menu_DOCENTE" action="action_DOCENTE" parent="men_sec"/>
+        
+
+    <!-- MENÚ PRINCIPAL -->
+    <menuitem name="%(module)s" id="men_pri"/>
+    <!-- Coloque aqui los menú secundarios que se crean en cada clase -->
+
+</data>
+</odoo>
